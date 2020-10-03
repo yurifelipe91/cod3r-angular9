@@ -8,3 +8,4 @@ Aplicação (CRUD):
 - Binding
 - Rotas
 - Observable
+- Services
