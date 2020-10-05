@@ -1,7 +1,3 @@
-# Executar o comando [npm i] para baixar as dependências da aplicação;
-
-# Executar o comando [npm start] para subir a aplicação;
-
 # Backend
 
 This project was generated with [json-serve](https://www.npmjs.com/package/json-server) version 0.16.1.
