@@ -1,0 +1,19 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  span{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.v-middle{
+  vertical-align: middle;
+}
+
+.red{
+  color: tomato;
+}

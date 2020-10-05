@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "GTX 1660 super",
+      "price": 1.250,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "PC Gamer",
+      "price": 12.000
+    },
+    {
+      "id": 3,
+      "name": "Nintendo",
+      "price": 2.999
+    },
+    {
+      "name": "RXT 2080 super",
+      "price": 3.999,
+      "id": 4
+    }
+  ]
+}
