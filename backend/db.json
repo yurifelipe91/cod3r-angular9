@@ -2,13 +2,13 @@
   "products": [
     {
       "name": "GTX 1660 super",
-      "price": 1.250,
+      "price": 1.25,
       "id": 1
     },
     {
       "id": 2,
       "name": "PC Gamer",
-      "price": 12.000
+      "price": 12
     },
     {
       "id": 3,
@@ -19,6 +19,11 @@
       "name": "RXT 2080 super",
       "price": 3.999,
       "id": 4
+    },
+    {
+      "name": "RXT 3080",
+      "price": 8.999,
+      "id": 5
     }
   ]
 }
