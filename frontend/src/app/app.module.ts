@@ -9,8 +9,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
 import { HomeComponent } from './views/home/home.component';
-import { RedDirective } from './directives/red.directive';
-import { ForDirective } from './directives/for.directive';
+// import { RedDirective } from './directives/red.directive';
+// import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 
@@ -20,6 +20,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -30,8 +35,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    RedDirective,
-    ForDirective,
+    // RedDirective,
+    // ForDirective,
     ProductCreateComponent,
     ProductCrudComponent,
   ],
@@ -44,7 +49,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
