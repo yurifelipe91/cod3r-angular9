@@ -26,6 +26,6 @@ export class ForDirective implements OnInit {
   }
 }
 
-//a propriedade de (myForEm), ela pega oq vem depois da palavra "em" no li do footer, no caso o array [1, 2, 3], da mesma forma o "usando"
+// a propriedade de(myForEm), ela pega oq vem depois da palavra "em" no li do footer, no caso o array[1, 2, 3], da mesma forma o "usando"
 
-//exemplo de diretiva estutural está sendo chamdo no footer como: *myFor
+// exemplo de diretiva estutural está sendo chamdo no footer como: * myFor

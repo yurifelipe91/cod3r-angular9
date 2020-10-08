@@ -10,4 +10,4 @@ export class RedDirective {
   }
 }
 
-//@diretiva de atributo: capaz de mexer com comportamente ou estilo do componente (atribui a um componente ou tag html)
+// @diretiva de atributo: capaz de mexer com comportamente ou estilo do componente (atribui a um componente ou tag html)
