@@ -8,7 +8,7 @@ import { Product } from './product.model';
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl = "http://localhost:3001/products";
+  api = "http://localhost:3001/products";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
@@ -21,8 +21,23 @@ export class ProductService {
   }
 
   create(product: Product): Observable<Product> {
-    let methodPost = this.http.post<Product>(this.baseUrl, product)
-
-    return methodPost;
+    return this.http.post<Product>(this.api, product)
   }
+
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.api)
+  }
+
+  readById(id: string): Observable<Product> {
+    const url = `${this.api}/${id}`
+
+    return this.http.get<Product>(url)
+  }
+
+  update(product: Product): Observable<Product> {
+    const url = `${this.api}/${product.id}`
+
+    return this.http.put<Product>(url, product)
+  }
+
 }
