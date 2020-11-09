@@ -6,24 +6,19 @@
       "id": 1
     },
     {
-      "id": 2,
-      "name": "PC Gamer",
-      "price": 12
-    },
-    {
-      "id": 3,
-      "name": "Nintendo",
-      "price": 2.999
-    },
-    {
       "name": "RXT 2080 super",
       "price": 3.999,
       "id": 4
     },
     {
-      "name": "RXT 3080",
-      "price": 8.999,
+      "name": "RXT 3080 Super",
+      "price": "7990",
       "id": 5
+    },
+    {
+      "name": "2323",
+      "price": "3214234",
+      "id": 6
     }
   ]
 }

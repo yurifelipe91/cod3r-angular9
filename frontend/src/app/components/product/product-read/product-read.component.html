@@ -26,7 +26,7 @@
         <button class="edit" mat-mini-fab routerLink="/products/update/{{row.id}}">
           <i class="material-icons">edit</i>
         </button>
-        <button mat-mini-fab routerLink="" class="delete">
+        <button mat-mini-fab routerLink="/products/remove/{{row.id}}" class="delete">
           <i class="material-icons">delete</i>
         </button>
       </td>
@@ -36,3 +36,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 </div>
+<span>{{emptyTableMsg}}</span>

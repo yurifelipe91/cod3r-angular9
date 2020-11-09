@@ -9,8 +9,9 @@ import { ProductService } from '../product.service';
 })
 export class ProductReadComponent implements OnInit {
 
-  products: Product[]
+  products: Product[] = []
   displayedColumns = ['id', 'name', 'price', 'actions']
+  emptyTableMsg: string
 
   constructor(private productService: ProductService) { }
 
@@ -18,6 +19,14 @@ export class ProductReadComponent implements OnInit {
     this.productService.read().subscribe(p => {
       this.products = p
     })
+
+    if (this.products && this.products.length < 1) {
+      this.emptyTableMsg = "Ta fora irmão"
+    }
+
+    if (!this.products) {
+      this.emptyTableMsg = "Ta fora iraaaamão"
+    }
   }
 
 }

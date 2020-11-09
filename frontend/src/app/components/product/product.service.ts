@@ -28,7 +28,7 @@ export class ProductService {
     return this.http.get<Product[]>(this.api)
   }
 
-  readById(id: string): Observable<Product> {
+  readById(id: number): Observable<Product> {
     const url = `${this.api}/${id}`
 
     return this.http.get<Product>(url)
@@ -38,6 +38,12 @@ export class ProductService {
     const url = `${this.api}/${product.id}`
 
     return this.http.put<Product>(url, product)
+  }
+
+  remove(id: number): Observable<Product> {
+    const url = `${this.api}/${id}`
+
+    return this.http.delete<Product>(url)
   }
 
 }
